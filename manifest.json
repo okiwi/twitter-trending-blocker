@@ -1,0 +1,22 @@
+{
+
+  "manifest_version": 2,
+  "name": "TwitterTrendingBlocker",
+  "version": "1.1",
+
+  "description": "Hide trending div in twitter",
+
+  "icons": {
+    "48": "icons/twitter-blocker-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitter.com/*"],
+      "css": ["twitter-trending-blocker.css"],
+      "run_at": "document_end"
+    }
+  ]
+
+}
+
